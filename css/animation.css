@@ -1,0 +1,36 @@
+@keyframes fly-in {
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+@keyframes fade-in {
+    to {
+        opacity: 1;
+    }
+    from {
+        opacity: 0;
+    }
+}
+
+.anim-elem-fade-in.visible {
+    animation: fade-in ease forwards 1.2s;
+}
+.anim-elem-fly-in.visible {
+    animation: fly-in ease forwards 1.2s;
+}
+
+.anim-cascade:nth-child(2) {
+    animation-delay: 0.8s;
+}
+.anim-cascade:nth-child(3) {
+    animation-delay: 1.6s;
+}
+
+.anim-elem-fade-in,.anim-elem-fly-in {
+    opacity: 0;
+}

@@ -1,0 +1,129 @@
+.section .container-about .flex {
+
+	width: 100%;
+	
+	align-items: center;
+	justify-content: center;
+
+	padding-top: 30px;
+
+}
+
+.flex {
+
+	display: flex;
+
+}
+
+.flex .element {
+
+	position: relative;
+
+	padding: 15px;
+	border-radius: 5px;
+
+	color: white;
+
+	width: 320px;
+	min-height: 370px;
+
+	opacity: 0.8;
+	transition: 0.4s;
+
+	box-shadow: 1px 1px rgba(0,0,0, 0.1);
+
+}
+
+.flex .element:not(:first-child) {
+
+	margin-left: 15px;
+
+}
+
+.flex .element.blue {
+	background: #0087C6;
+}
+.flex .element.purple {
+	background: #467DC8;
+}
+.flex .element.gray {
+	background: #6E71C3;
+}
+
+.flex .element:hover {
+
+	opacity: 1;
+	transform: translateY(-4px);
+}
+
+.flex .element .elem-title {
+
+	font-size: 24px;
+	font-weight: 900;
+
+	padding-top: 5px;
+	padding-left: 4px;
+
+}
+
+.flex .element .elem-description {
+
+	padding-top: 10px;
+	padding-left: 4px;
+
+	font-size: 18px;
+	font-weight: 100;
+
+	color: #eee;
+
+}
+
+.flex .element .elem-cta {
+
+	font-size: 21px;
+	padding-left: 4px;
+	padding-bottom: 19px;
+
+	position: absolute;
+	bottom: 0;
+
+}
+
+
+
+				<div class="flex">
+
+					<div class="element blue">
+
+						<h1 class="elem-title">Bot Development</h1>
+						<p class="elem-description">
+							Give your discord server, subreddit or forum the boost it needs.
+						</p>
+
+						<h1 class="elem-cta">Get a quote ></h1>
+
+					</div>
+
+					<div class="element gray">
+
+						<h1 class="elem-title">Web Development</h1>
+						<p class="elem-description">
+							Whether it's a lemonade stand or a multinational conglomerate, we can provide impressive designs for your business or service 
+						</p>
+
+						<h1 class="elem-cta">Get a quote ></h1>
+
+					</div>
+
+					<div class="element purple">
+
+						<h1 class="elem-title">Backend Development</h1>
+						<p class="elem-description">
+							Give your discord server, subreddit or forum the boost it needs.
+						</p>
+
+						<h1 class="elem-cta">Get a quote ></h1>
+
+					</div>
+
+				</div>
